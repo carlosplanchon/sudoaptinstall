@@ -16,9 +16,13 @@ In [2]: from getpass import getpass
 In [3]: password = getpass()
 Password: ********
 
+# Satisfize dependencies with 
+# sudoaptinstall.satisfize_dependencies(root_password)
+
 In [4]: res = sudoaptinstall.sudo_apt_install(
     package_list=["git", "irssi"],
-    password=password
+    password=password,
+    use_torsocks=False
     )
 
 WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
