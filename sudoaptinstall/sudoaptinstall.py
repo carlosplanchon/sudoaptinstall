@@ -3,7 +3,7 @@
 from invoke import Context
 from invoke.runners import Result
 
-from typing import Any, List
+from typing import List
 
 
 def sudo_apt_install(
@@ -25,7 +25,7 @@ def sudo_apt_install(
         )
 
 
-def satisfize_dependencies(root_password: str) -> Any:
+def satisfize_dependencies(root_password: str) -> Result:
     """
     Satisfize APT package dependencies.
     :param root_password: str: root password, get it with getpass.getpass
