@@ -8,7 +8,7 @@ readme = Path("README.md").read_text()
 setup(
     name="sudoaptinstall",
     packages=["sudoaptinstall"],
-    version="0.2",
+    version="0.3",
     license="GPL3",
     description="Python3 module to install APT Packages.",
     long_description=readme,
@@ -17,7 +17,7 @@ setup(
     author_email="bubbledoloresuruguay2@gmail.com",
     url="https://github.com/carlosplanchon/sudoaptinstall",
     download_url="https://github.com/carlosplanchon/"
-        "sudoaptinstall/archive/v0.2.tar.gz",
+        "sudoaptinstall/archive/v0.3.tar.gz",
     keywords=["sudo", "apt", "install"],
     install_requires=[
         "invoke",
